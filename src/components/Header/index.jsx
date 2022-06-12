@@ -29,8 +29,10 @@ const Header = () => {
       linksPage[1].classList.add('page-active')
     } else if(contentLink === 'CREW') {
       linksPage[2].classList.add('page-active')
-    } else {
+    } else if(contentLink === 'TECHNOLOGY') {
       linksPage[3].classList.add('page-active')
+    } else {
+      linksPage[0].classList.add('page-active')
     }
   },[linkActive])
       
