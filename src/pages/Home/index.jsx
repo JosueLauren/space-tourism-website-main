@@ -14,9 +14,11 @@ const Home = () => {
                 </p>
             </div>
 
-            <div className='explore-home'>
-                EXPLORE
-            </div>
+           <div className='back-radial'> 
+                <div className='explore-home'>
+                    EXPLORE
+                </div>
+           </div>
         </div>
     )
 }

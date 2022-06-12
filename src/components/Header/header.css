@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    max-width: 1400px;
     height: 150px;
     position: absolute;
 }
@@ -31,19 +32,138 @@
     border-radius: 5px;
 }
 
+.menuMobile{
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    height: 100px;
+    width: 60%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
 .menu a {
     margin: 0 15px;
-    border-bottom: 4px solid #fff;
     height: 100%;
     display: flex;
     align-items: center;
     color: rgba(255,255,255,0.8);
     text-decoration: none;
-    border-radius: 3px;
+    transition: all 0.3s;
+    border-bottom: 3px solid transparent;
 }
 
-.menu a span {
+.menuMobile a {
+    margin: 0 15px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    transition: all 0.3s; 
+    border-right: 3px solid transparent;
+}
+
+.menu a:hover, .menuMobile a:hover{
+    border-color: rgba(255,255,255,0.5);
+}
+
+.page-active{
+    border-color: #fff !important;
+}
+
+.menu a span, .menuMobile a span {
     margin-right: 10px;
     font-weight: bold;
     color: #fff;
+}
+
+.btn-fechar-menu, .btn-abrir-menu{
+    display: none;
+}
+
+/* tablet */
+
+@media (max-width: 868px) {
+    .linha {
+        display: none;
+    }
+
+    .menu {
+        width: 70%;
+        justify-content: space-around;
+    }
+    .menu a {
+        margin: 0;
+    }
+    .header img {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .bodyscrollHide{
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menuMobile {
+        position: absolute;
+        width: 300px;
+        min-height: 100vh;
+        z-index: 3;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 100px;
+        border-radius: 0px;
+        display: flex;
+    }
+
+    .menuMobile a {
+        margin: 20px auto;
+        height: auto;
+        width: 100%;
+        padding-left: 30px;
+    }
+    .menuMobile a:hover{
+        border-right: 4px solid rgba(255,255,255,0.8);
+        border-bottom: none;
+    }
+    
+    .menuMobile a:active{
+        border-right: 4px solid #fff;
+        border-bottom: none;
+    }
+
+    .btn-fechar-menu{
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        left: calc(100% - 30px);
+        bottom: calc(100vh - 30px);
+        display: inline;
+        cursor: pointer;
+    }
+    .btn-fechar-menu img, .btn-abrir-menu img  {
+        margin: auto;
+        width: 100%;
+    }
+
+    .btn-abrir-menu{
+        display: inline;
+        background-color: transparent;
+        border: none;
+        position: relative;
+        cursor: pointer;
+        margin-right: 30px;
+    }
+
 }

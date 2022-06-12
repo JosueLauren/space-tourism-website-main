@@ -1,0 +1,144 @@
+.container-image-description{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.container-description-crew {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.sub-title-crew{
+    width: 80%;
+    font-family: 'Bellefair', serif;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: #D0D6F9;
+}
+
+.title-crew{
+    width: 80%;
+    font-family: 'Bellefair', serif;
+    color: #fff;
+    font-size: 56px;
+    text-transform: uppercase;
+    margin: 20px 0;
+
+}
+
+.paragraph-crew{
+    width: 80%;
+    color: #D0D6F9;
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.btns-nav-crew{
+    width: 80%;
+    margin-top: 150px;
+  
+}
+
+.btns-nav-crew button {
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+    background-color: #979797;
+    border: none;
+    margin: 0 15px;
+    transition: all 0.3s;
+}
+
+.btns-nav-crew button:hover {
+    background-color: #fff;
+    opacity: 0.3;
+}
+
+.btn-active{
+    background-color: #fff !important;
+}
+
+.container-image-crew {
+    width: 50%;
+    text-align: center;
+
+}
+
+.container-image-crew img {
+    width: 70%;
+
+}
+
+@media screen and (max-width: 900px) {
+    .container-image-description{
+        flex-direction: column;
+    }
+
+    .container-description-crew{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    .btns-nav-crew{
+       margin: 50px auto;
+    }
+
+    .container-image-crew {
+        width: 100%;
+    }
+
+    .container-image-crew img{
+        width: 40%;
+    }
+
+    .title-crew{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .container-image-description{
+        flex-direction: column-reverse;
+    }
+    .container-description-crew{
+        margin-top: 50px;
+    }
+
+    .container-image-crew{
+        width: 90%;
+        margin: 50px auto 30px auto;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .btns-nav-crew{
+        position: relative;
+        top: -340px;
+        margin: 0px auto;
+    }
+
+    .title-crew{
+        font-size: 24px;
+    }
+
+    .sub-title-crew{
+        font-size: 16px;
+    }
+
+    .paragraph-crew{
+        font-size: 15px;
+        min-height: 200px;
+    }
+}

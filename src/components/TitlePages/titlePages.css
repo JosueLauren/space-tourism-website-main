@@ -1,0 +1,21 @@
+.titulo-pages {
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 5px;
+    font-size: 28px;
+    font-weight: 100;
+    color: #fff !important;
+}
+
+.titulo-pages span {
+    margin-right: 10px;
+    opacity: 0.3;
+}
+
+@media screen and (max-width: 510px){
+    .titulo-pages {
+        width: 100%;
+        text-align: center;
+    }
+}

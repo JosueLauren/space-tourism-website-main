@@ -2,22 +2,40 @@
     background-image: url(./../../assets/home/background-home-desktop.jpg);
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: flex-end;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .description-home {
-    width: 30%;
+    width: 50%;
     color: #fff;
     text-align: justify;
     margin-bottom: 100px;
+    max-width: 1400px;
 }
 
 .description-home .title-home {
-    font-size: 9rem;
-    font-weight: 300;
+    font-size: 150px;
+    line-height: 1.3em;
+    font-weight: 100;
+    font-family: 'Bellefair', serif;
+}
+
+.description-home .sub-title-home{
+    font-weight: 100;
+    font-size: 1.8em;
+    color: #D0D6F9;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 3px;
+}
+
+.description-home .paragrafh-home{
+    line-height: 1.8em;
+    color: #D0D6F9;
+    font-family: 'Barlow', sans-serif;
+    width: 70%;
 }
 
 .explore-home {
@@ -30,4 +48,70 @@
     align-items: center;
     border-radius: 100%;
     font-size: 1.5rem;
+    font-family: 'Bellefair', serif;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.back-radial {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+    transition: all 0.5s ease-in-out;
+}
+
+ .back-radial:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* tablet */
+
+@media (max-width: 768px) {
+    
+    .container{
+        flex-direction: column;
+        align-items: center;
+        background-image: url('./../../assets/home/background-home-tablet.jpg');
+    }
+
+    .description-home{
+        width: 70%;
+        position: relative;
+        top: 180px;
+        text-align: center;
+    }
+
+    .explore-home {
+        margin: 200px auto 100px auto;
+    }
+
+    .description-home .paragrafh-home{
+        width: 100%;
+    }
+}
+
+/* mobile */
+
+@media screen and (max-width: 600px) {
+    .description-home .title-home {
+        font-size: 7rem;
+    }
+    .description-home .sub-title-home{
+        font-size: 1.6rem;
+    }
+
+    .back-radial{
+        margin-top: 100px;
+
+    }
+
+    .explore-home{
+        margin: auto;
+    }
+
+  
 }

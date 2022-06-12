@@ -1,0 +1,24 @@
+.container-destination{
+        background-image: url(./../../assets/destination/background-destination-desktop.jpg);
+        background-size: cover;
+        max-width: 1400px;
+        width: 100%;
+        min-height: 100vh;
+        color: #fff; 
+        padding-top: 200px;
+}
+
+@media screen and (max-width: 900px) {
+    .container-destination {
+        background-image: url(./../../assets/destination/background-destination-tablet.jpg) !important;
+        
+    }
+}
+
+@media screen and (max-width: 510px){
+    .container-destination {
+        background-image: url(./../../assets/destination/background-destination-mobile.jpg) !important;
+        
+    }
+}
+
