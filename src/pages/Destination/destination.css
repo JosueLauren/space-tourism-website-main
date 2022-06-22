@@ -10,15 +10,13 @@
 
 @media screen and (max-width: 900px) {
     .container-destination {
-        background-image: url(./../../assets/destination/background-destination-tablet.jpg) !important;
-        
+        background-image: url(./../../assets/destination/background-destination-tablet.jpg);
     }
 }
 
 @media screen and (max-width: 510px){
     .container-destination {
-        background-image: url(./../../assets/destination/background-destination-mobile.jpg) !important;
-        
+        background-image: url(./../../assets/destination/background-destination-mobile.jpg);
     }
 }
 
